@@ -1,0 +1,13 @@
+.questions {
+  flex: 1;
+  h3 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .questions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+}

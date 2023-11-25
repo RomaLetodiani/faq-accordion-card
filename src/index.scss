@@ -4,3 +4,37 @@
   box-sizing: border-box;
   font-family: $primary-font-family;
 }
+
+.content {
+  min-height: 100vh;
+  min-width: 280px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $gradient-primary;
+  padding: 20px;
+  .wrapper {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    background: #f9f9f9;
+    border-radius: 20px;
+    .container {
+      display: flex;
+      overflow: hidden;
+      padding: 50px;
+      min-height: 450px;
+      @include mobile {
+        flex-direction: column;
+        padding-top: 15vw;
+      }
+    }
+    .box {
+      position: absolute;
+      left: 0;
+      top: 60%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

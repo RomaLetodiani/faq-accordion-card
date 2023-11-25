@@ -23,3 +23,10 @@ $mobile-breakpoint: 480px;
 $mobile-width: 768px;
 $tablet-width: 1024px;
 $desktop-width: 1280px;
+
+// responsive
+@mixin mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}

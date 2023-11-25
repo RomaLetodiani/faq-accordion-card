@@ -1,0 +1,40 @@
+.question-div {
+  border-bottom: 1px solid $divider-color;
+  padding-bottom: 10px;
+  button {
+    all: unset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    cursor: pointer;
+
+    &.active {
+      p {
+        color: $selected-color;
+        font-weight: 700;
+      }
+      img {
+        transform: rotate(180deg);
+      }
+    }
+    p {
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+    img {
+      transition: all 0.3s ease;
+    }
+  }
+  > p {
+    margin-top: 5px;
+    color: $secondary-color;
+    font-weight: 400;
+    font-size: $small-font-size;
+    padding-right: 10px;
+  }
+}

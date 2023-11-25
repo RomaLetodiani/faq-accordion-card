@@ -1,0 +1,17 @@
+.mobile-images-div {
+  position: absolute;
+  max-width: 300px;
+  min-width: 200px;
+  top: -5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .mobile-girl {
+    width: 100%;
+  }
+  .mobile-shadow {
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    width: 100%;
+  }
+}
